@@ -7,5 +7,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "server",
   adapter: cloudflare(),
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  site: "https://souta-lab.net"
 });
