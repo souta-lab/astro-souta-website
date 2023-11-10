@@ -3,7 +3,6 @@ name: Deploy to souta-lab.net via Cloudflare Pages
 
 on:
   push:
-  pull_request:
 
 permissions:
   contents: read
