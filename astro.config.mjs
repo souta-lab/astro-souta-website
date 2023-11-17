@@ -8,5 +8,6 @@ export default defineConfig({
   integrations: [
 tailwind()
   ],
-  site: "https://souta-lab.net"
+  base: "/",
+  site: "https://souta-lab.net/"
 });
