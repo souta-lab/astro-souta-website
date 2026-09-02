@@ -1,8 +1,8 @@
 # souta-lab.net
 
-Personal website — [souta-lab.net](https://souta-lab.net)
+Personal website built with [Astro](https://astro.build) + Tailwind CSS.
 
-Built with [Astro](https://astro.build) + Tailwind CSS, deployed on Cloudflare.
+> **Note:** `souta-lab.net` domain is currently expired and not yet renewed. The site can be run locally — see below.
 
 ## Stack
 
