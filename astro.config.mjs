@@ -9,5 +9,5 @@ export default defineConfig({
 tailwind()
   ],
   base: "/",
-  // site: "https://souta-lab.net/" // domain expired, re-enable after renewal
 });
+
