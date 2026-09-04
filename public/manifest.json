@@ -1,5 +1,5 @@
 {
-	"name":				"souta-lab.net",
+	"name":				"souta-lab",
 	"short_name":		"Only souta-lab's website",
 	"description":		"souta-labのサイトです。様々なツールやブログなどを公開しています。",
 	"scope": "/",
@@ -59,11 +59,3 @@
 			"sizes": "384x384",
 			"type": "image/png"
 		},
-		{
-			"src": "/android-chrome-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png",
-			"purpose": "any maskable"
-		}
-	]
-}
