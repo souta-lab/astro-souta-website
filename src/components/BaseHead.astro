@@ -1,19 +1,24 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 
+
 interface Props {
     title: string;
 	description: string;
 	icon: string;
 }
 
+
 const { title, description, icon } = Astro.props
 
+
 const url = Astro.url;
+
 
 function parseOGP(link: string): string {
     return link.replace("://", ":/:/").replace("//", "/").replace(":/:/", "://")
 }
+
 
 ---
 <meta charset="UTF-8" />
@@ -22,7 +27,6 @@ function parseOGP(link: string): string {
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
 <meta name="theme-color" content="#0F172A"/>
-<link rel="canonical" href="https://souta-lab.net/" />
 <title>{title}</title>
 <!-- OGP -->
 <meta property="og:locale" content="ja_JP" />
@@ -59,35 +63,3 @@ function parseOGP(link: string): string {
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="36x36" href="/android-chrome-36x36.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/android-chrome-48x48.png">
-<link rel="icon" type="image/png" sizes="72x72" href="/android-chrome-72x72.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/android-chrome-96x96.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/android-chrome-128x128.png">
-<link rel="icon" type="image/png" sizes="144x144" href="/android-chrome-144x144.png">
-<link rel="icon" type="image/png" sizes="152x152" href="/android-chrome-152x152.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="256x256" href="/android-chrome-256x256.png">
-<link rel="icon" type="image/png" sizes="384x384" href="/android-chrome-384x384.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-<link rel="icon" type="image/png" sizes="36x36" href="/icon-36x36.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/icon-48x48.png">
-<link rel="icon" type="image/png" sizes="72x72" href="/icon-72x72.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/icon-96x96.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/icon-128x128.png">
-<link rel="icon" type="image/png" sizes="144x144" href="/icon-144x144.png">
-<link rel="icon" type="image/png" sizes="152x152" href="/icon-152x152.png">
-<link rel="icon" type="image/png" sizes="160x160" href="/icon-160x160.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png">
-<link rel="icon" type="image/png" sizes="196x196" href="/icon-196x196.png">
-<link rel="icon" type="image/png" sizes="256x256" href="/icon-256x256.png">
-<link rel="icon" type="image/png" sizes="384x384" href="/icon-384x384.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png">
-<link rel="icon" type="image/png" sizes="24x24" href="/icon-24x24.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png">
-<link rel="manifest" href="/manifest.json">
-<script>const registerServiceWorker=async()=>{if("serviceWorker"in navigator)try{let e=await navigator.serviceWorker.register("/sw.js",{scope:"/"});e.installing?console.log("Service worker installing"):e.waiting?console.log("Service worker installed"):e.active&&console.log("Service worker active")}catch(r){console.error(`Registration failed with ${r}`)}};registerServiceWorker();</script>
-<ViewTransitions />
