@@ -1,22 +1,28 @@
-name: souta-lab-Bet-Deploy
+name: Souta-Lab-Deploy
+
 
 on:
   push:
   pull_request:
 
+
 permissions:
   contents: read
+
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
+
     steps:
       - name: Setup repo
         uses: actions/checkout@v3
 
+
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
+
 
       - name: Install deps
         run: bun i
@@ -27,10 +33,12 @@ jobs:
           pwd
           ls
 
+
       - name: Publish
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=astro-souta-lab-net
+          command: pages deploy dist --project-name=astro-souta-website
         
+
